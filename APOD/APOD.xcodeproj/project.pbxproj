@@ -15,6 +15,20 @@
 		BC2A37D429DBEB3F00FA696B /* APODTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A37D329DBEB3F00FA696B /* APODTests.swift */; };
 		BC2A37DE29DBEB3F00FA696B /* APODUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A37DD29DBEB3F00FA696B /* APODUITests.swift */; };
 		BC2A37E029DBEB3F00FA696B /* APODUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A37DF29DBEB3F00FA696B /* APODUITestsLaunchTests.swift */; };
+		BC2A37F629DBEE6900FA696B /* CDApodData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A37F529DBEE6900FA696B /* CDApodData.swift */; };
+		BC2A37F829DBEF8900FA696B /* PersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A37F729DBEF8900FA696B /* PersistentStorage.swift */; };
+		BC2A37FE29DBF04100FA696B /* ApodData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A37FD29DBF04100FA696B /* ApodData.swift */; };
+		BC2A380029DBF18D00FA696B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A37FF29DBF18D00FA696B /* NetworkManager.swift */; };
+		BC2A380229DBF1E600FA696B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A380129DBF1E600FA696B /* NetworkError.swift */; };
+		BC2A380529DBF20E00FA696B /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A380429DBF20E00FA696B /* NetworkRequest.swift */; };
+		BC2A380729DBF23100FA696B /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A380629DBF23100FA696B /* NetworkReachability.swift */; };
+		BC2A380929DBF29F00FA696B /* CDApodDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A380829DBF29F00FA696B /* CDApodDataRepository.swift */; };
+		BC2A380B29DBFA0800FA696B /* ApodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A380A29DBFA0800FA696B /* ApodViewModel.swift */; };
+		BC2A380D29DBFA2300FA696B /* ApodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A380C29DBFA2300FA696B /* ApodViewController.swift */; };
+		BC2A380F29DBFA3400FA696B /* Apod.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2A380E29DBFA3400FA696B /* Apod.storyboard */; };
+		BC2A381129DBFED900FA696B /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A381029DBFED900FA696B /* Bindable.swift */; };
+		BC2A381329DC01DD00FA696B /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A381229DC01DD00FA696B /* FileManager+Extension.swift */; };
+		BC2A381529DC022000FA696B /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A381429DC022000FA696B /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +61,20 @@
 		BC2A37D929DBEB3F00FA696B /* APODUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APODUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC2A37DD29DBEB3F00FA696B /* APODUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODUITests.swift; sourceTree = "<group>"; };
 		BC2A37DF29DBEB3F00FA696B /* APODUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BC2A37F529DBEE6900FA696B /* CDApodData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDApodData.swift; sourceTree = "<group>"; };
+		BC2A37F729DBEF8900FA696B /* PersistentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorage.swift; sourceTree = "<group>"; };
+		BC2A37FD29DBF04100FA696B /* ApodData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodData.swift; sourceTree = "<group>"; };
+		BC2A37FF29DBF18D00FA696B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BC2A380129DBF1E600FA696B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		BC2A380429DBF20E00FA696B /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		BC2A380629DBF23100FA696B /* NetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
+		BC2A380829DBF29F00FA696B /* CDApodDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDApodDataRepository.swift; sourceTree = "<group>"; };
+		BC2A380A29DBFA0800FA696B /* ApodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodViewModel.swift; sourceTree = "<group>"; };
+		BC2A380C29DBFA2300FA696B /* ApodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodViewController.swift; sourceTree = "<group>"; };
+		BC2A380E29DBFA3400FA696B /* Apod.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Apod.storyboard; sourceTree = "<group>"; };
+		BC2A381029DBFED900FA696B /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		BC2A381229DC01DD00FA696B /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
+		BC2A381429DC022000FA696B /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,9 +157,9 @@
 		BC2A37EC29DBEB8800FA696B /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				BC2A37C729DBEB3F00FA696B /* LaunchScreen.storyboard */,
-				BC2A37BB29DBEB3E00FA696B /* SceneDelegate.swift */,
 				BC2A37B929DBEB3E00FA696B /* AppDelegate.swift */,
+				BC2A37BB29DBEB3E00FA696B /* SceneDelegate.swift */,
+				BC2A37C729DBEB3F00FA696B /* LaunchScreen.storyboard */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -139,6 +167,8 @@
 		BC2A37ED29DBEB9400FA696B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				BC2A381229DC01DD00FA696B /* FileManager+Extension.swift */,
+				BC2A381429DC022000FA696B /* Date+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -147,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				BC2A37C229DBEB3E00FA696B /* APOD.xcdatamodeld */,
+				BC2A37F729DBEF8900FA696B /* PersistentStorage.swift */,
+				BC2A37F429DBEE2B00FA696B /* CDApodDataRepository */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -154,6 +186,7 @@
 		BC2A37EF29DBEBA900FA696B /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				BC2A381029DBFED900FA696B /* Bindable.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -161,6 +194,10 @@
 		BC2A37F029DBEBBB00FA696B /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				BC2A37FF29DBF18D00FA696B /* NetworkManager.swift */,
+				BC2A380129DBF1E600FA696B /* NetworkError.swift */,
+				BC2A380429DBF20E00FA696B /* NetworkRequest.swift */,
+				BC2A380629DBF23100FA696B /* NetworkReachability.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -168,6 +205,7 @@
 		BC2A37F129DBEBC700FA696B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				BC2A37F929DBF00200FA696B /* APOD */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -178,6 +216,58 @@
 				BC2A37C529DBEB3F00FA696B /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		BC2A37F329DBEE2100FA696B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC2A37F529DBEE6900FA696B /* CDApodData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC2A37F429DBEE2B00FA696B /* CDApodDataRepository */ = {
+			isa = PBXGroup;
+			children = (
+				BC2A37F329DBEE2100FA696B /* Model */,
+				BC2A380829DBF29F00FA696B /* CDApodDataRepository.swift */,
+			);
+			path = CDApodDataRepository;
+			sourceTree = "<group>";
+		};
+		BC2A37F929DBF00200FA696B /* APOD */ = {
+			isa = PBXGroup;
+			children = (
+				BC2A37FC29DBF02000FA696B /* Model */,
+				BC2A37FB29DBF01700FA696B /* ViewModel */,
+				BC2A37FA29DBF00A00FA696B /* View */,
+			);
+			path = APOD;
+			sourceTree = "<group>";
+		};
+		BC2A37FA29DBF00A00FA696B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC2A380C29DBFA2300FA696B /* ApodViewController.swift */,
+				BC2A380E29DBFA3400FA696B /* Apod.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC2A37FB29DBF01700FA696B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BC2A380A29DBFA0800FA696B /* ApodViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BC2A37FC29DBF02000FA696B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC2A37FD29DBF04100FA696B /* ApodData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +374,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC2A380F29DBFA3400FA696B /* Apod.storyboard in Resources */,
 				BC2A37C929DBEB3F00FA696B /* LaunchScreen.storyboard in Resources */,
 				BC2A37C629DBEB3F00FA696B /* Assets.xcassets in Resources */,
 			);
@@ -310,9 +401,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC2A37F629DBEE6900FA696B /* CDApodData.swift in Sources */,
+				BC2A380229DBF1E600FA696B /* NetworkError.swift in Sources */,
 				BC2A37C429DBEB3E00FA696B /* APOD.xcdatamodeld in Sources */,
 				BC2A37BA29DBEB3E00FA696B /* AppDelegate.swift in Sources */,
+				BC2A380029DBF18D00FA696B /* NetworkManager.swift in Sources */,
+				BC2A381529DC022000FA696B /* Date+Extension.swift in Sources */,
+				BC2A37F829DBEF8900FA696B /* PersistentStorage.swift in Sources */,
+				BC2A380929DBF29F00FA696B /* CDApodDataRepository.swift in Sources */,
 				BC2A37BC29DBEB3E00FA696B /* SceneDelegate.swift in Sources */,
+				BC2A381129DBFED900FA696B /* Bindable.swift in Sources */,
+				BC2A380529DBF20E00FA696B /* NetworkRequest.swift in Sources */,
+				BC2A37FE29DBF04100FA696B /* ApodData.swift in Sources */,
+				BC2A381329DC01DD00FA696B /* FileManager+Extension.swift in Sources */,
+				BC2A380D29DBFA2300FA696B /* ApodViewController.swift in Sources */,
+				BC2A380B29DBFA0800FA696B /* ApodViewModel.swift in Sources */,
+				BC2A380729DBF23100FA696B /* NetworkReachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,7 +590,7 @@
 				INFOPLIST_FILE = APOD/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Apod;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -513,7 +617,7 @@
 				INFOPLIST_FILE = APOD/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Apod;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
