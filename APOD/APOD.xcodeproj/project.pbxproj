@@ -29,6 +29,9 @@
 		BC2A381129DBFED900FA696B /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A381029DBFED900FA696B /* Bindable.swift */; };
 		BC2A381329DC01DD00FA696B /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A381229DC01DD00FA696B /* FileManager+Extension.swift */; };
 		BC2A381529DC022000FA696B /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A381429DC022000FA696B /* Date+Extension.swift */; };
+		BC2A381829DC1D8200FA696B /* ApodViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A381729DC1D8200FA696B /* ApodViewModelTests.swift */; };
+		BC2A381A29DC1FD300FA696B /* CDApodDataRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A381929DC1FD300FA696B /* CDApodDataRepositoryTests.swift */; };
+		BC2A381E29DC2C7A00FA696B /* ApodDataModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A381D29DC2C7900FA696B /* ApodDataModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,9 @@
 		BC2A381029DBFED900FA696B /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		BC2A381229DC01DD00FA696B /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
 		BC2A381429DC022000FA696B /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		BC2A381729DC1D8200FA696B /* ApodViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodViewModelTests.swift; sourceTree = "<group>"; };
+		BC2A381929DC1FD300FA696B /* CDApodDataRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDApodDataRepositoryTests.swift; sourceTree = "<group>"; };
+		BC2A381D29DC2C7900FA696B /* ApodDataModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodDataModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +147,9 @@
 			isa = PBXGroup;
 			children = (
 				BC2A37D329DBEB3F00FA696B /* APODTests.swift */,
+				BC2A381D29DC2C7900FA696B /* ApodDataModelTests.swift */,
+				BC2A381729DC1D8200FA696B /* ApodViewModelTests.swift */,
+				BC2A381929DC1FD300FA696B /* CDApodDataRepositoryTests.swift */,
 			);
 			path = APODTests;
 			sourceTree = "<group>";
@@ -424,7 +433,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC2A381829DC1D8200FA696B /* ApodViewModelTests.swift in Sources */,
+				BC2A381E29DC2C7A00FA696B /* ApodDataModelTests.swift in Sources */,
 				BC2A37D429DBEB3F00FA696B /* APODTests.swift in Sources */,
+				BC2A381A29DC1FD300FA696B /* CDApodDataRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

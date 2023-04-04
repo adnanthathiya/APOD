@@ -3,4 +3,86 @@
    uuid = "3B2479AA-380D-4D71-9877-8EACFD8E1279"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3429482C-4515-46D7-9D66-C9FA2B519D89"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "APODTests/CDApodDataRepositoryTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "testIsDataAvailable()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9323EDE1-20D8-4B69-AA20-F855B9A7ECFF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "APODTests/CDApodDataRepositoryTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "testSaveApodDataToDB()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F8461777-192D-4785-B826-9456FFE14350"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "APODTests/CDApodDataRepositoryTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "testGetCDApodDataFromDB()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F8461777-192D-4785-B826-9456FFE14350 - 676f9c5616d03fbb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "APODTests.CDApodDataRepositoryTests.testGetCDApodDataFromDB() -&gt; ()"
+                  moduleName = "APODTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adnanthathiya/Documents/Personal/Interviews/Walmart/Test-Demo/APOD/APOD/APODTests/CDApodDataRepositoryTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "51">
+               </Location>
+               <Location
+                  uuid = "F8461777-192D-4785-B826-9456FFE14350 - 676f9c5616d03fbb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "APODTests.CDApodDataRepositoryTests.testGetCDApodDataFromDB() -&gt; ()"
+                  moduleName = "APODTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adnanthathiya/Documents/Personal/Interviews/Walmart/Test-Demo/APOD/APOD/APODTests/CDApodDataRepositoryTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "53">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
