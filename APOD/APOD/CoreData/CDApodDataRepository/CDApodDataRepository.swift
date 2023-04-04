@@ -34,17 +34,19 @@ class CDApodDataRepository: CDApodDataRepositoryProtocol {
     }
 
     func save(with apodData: ApodData) -> Bool {
-        guard getCDApodData(by: apodData.date) == nil else { return false }
+        if self.isDataAvailable(for: apodData.date) {
+            return self.update(with: apodData)
+        } else {
+            let cdApodData = CDApodData(context: PersistentStorage.shared.context)
+            cdApodData.title = apodData.title
+            cdApodData.explanation = apodData.explanation
+            cdApodData.mediaType = apodData.mediaType
+            cdApodData.copyright = apodData.copyright ?? ""
+            cdApodData.date = apodData.date
 
-        let cdApodData = CDApodData(context: PersistentStorage.shared.context)
-        cdApodData.title = apodData.title
-        cdApodData.explanation = apodData.explanation
-        cdApodData.mediaType = apodData.mediaType
-        cdApodData.copyright = apodData.copyright ?? ""
-        cdApodData.date = apodData.date
-
-        PersistentStorage.shared.saveContext()
-        return true
+            PersistentStorage.shared.saveContext()
+            return true
+        }
     }
 
     func update(with apodData: ApodData) -> Bool {
@@ -59,5 +61,9 @@ class CDApodDataRepository: CDApodDataRepositoryProtocol {
 
         PersistentStorage.shared.saveContext()
         return true
+    }
+
+    func isDataAvailable(for date: String) -> Bool {
+        return getCDApodData(by: date) != nil
     }
 }
