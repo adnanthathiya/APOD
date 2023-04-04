@@ -55,7 +55,7 @@ class ApodViewModel: ApodViewModelProtocol {
 }
 
 // MARK: - Store Data Methods
-private extension ApodViewModel {
+extension ApodViewModel {
     func fetchTodayApodDataFromDB() -> CDApodData? {
         return repo.getCDApodData(by: Date.today())
     }
