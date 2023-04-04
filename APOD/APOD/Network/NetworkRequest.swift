@@ -12,7 +12,7 @@ enum Method: String {
 }
 
 enum Endpoint: String {
-    case apodInfo = "planetary/apod"
+    case apodData = "planetary/apod"
 }
 
 struct NetworkRequest<Value> {
