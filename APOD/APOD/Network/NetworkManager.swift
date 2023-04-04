@@ -29,6 +29,11 @@ final class NetworkManager {
 
     func requestData<Value: Decodable>(_ request: NetworkRequest<Value>, completion: @escaping (Result<Value, NetworkError>) -> Void) {
         urlSession.dataTask(with: urlRequest(for: request)) { responseData, response, _ in
+            guard let httpResponse = response as? HTTPURLResponse, 200...299 ~= httpResponse.statusCode else {
+                completion(.failure(.responseError))
+                return
+            }
+
             if let data = responseData {
                 let response: Value
                 do {
