@@ -9,6 +9,13 @@ import UIKit
 
 class ApodViewController: UIViewController {
 
+    private enum Constants {
+        static let title = "APOD"
+        static let loadingDataErrorTitle = "Error while loading"
+        static let loadingDataErrorDescription = "We are not connected to the internet, showing you the last image we have."
+        static let alertActionOk = "Ok"
+    }
+
     // MARK: - @IBOutlet
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -21,6 +28,7 @@ class ApodViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        initializeView()
         bind()
         viewModel.viewDidLoad()
     }
@@ -37,12 +45,28 @@ class ApodViewController: UIViewController {
             guard let self = self else { return }
             if isLoading {
                 self.activityIndicator.startAnimating()
-                self.view.isUserInteractionEnabled = false
             } else {
                 self.activityIndicator.stopAnimating()
-                self.view.isUserInteractionEnabled = true
             }
         }
+
+        viewModel.isLoadingDataError.bind { [weak self] isLoadingDataError in
+            guard let self = self else { return }
+            if isLoadingDataError {
+                self.showLoadDataError()
+            }
+        }
+    }
+}
+
+// MARK: - Layout
+private extension ApodViewController {
+    func initializeView() {
+        setupTitle()
+    }
+
+    func setupTitle() {
+        self.title = Constants.title
     }
 }
 
@@ -68,5 +92,22 @@ private extension ApodViewController {
                 self.photoImageView.image = image
             }
         }
+    }
+}
+
+// MARK: - Show Error
+private extension ApodViewController {
+    func showLoadDataError() {
+        let alertController = UIAlertController(title: Constants.loadingDataErrorTitle,
+                                                message: Constants.loadingDataErrorDescription,
+                                                preferredStyle: .alert)
+
+        let okAction = UIAlertAction(title: Constants.alertActionOk, style: .cancel) { [weak self] action in
+            guard let self = self else { return }
+            self.dismiss(animated: true)
+        }
+
+        alertController.addAction(okAction)
+        self.present(alertController, animated: true)
     }
 }

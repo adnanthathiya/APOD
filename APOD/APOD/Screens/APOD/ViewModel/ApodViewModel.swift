@@ -9,6 +9,7 @@ import Foundation
 
 public protocol ApodViewModelProtocol: AnyObject {
     var isLoading: Bindable<Bool> { get }
+    var isLoadingDataError: Bindable<Bool> { get }
     var apodData: Bindable<ApodData?> { get }
 
     func viewDidLoad()
@@ -18,6 +19,7 @@ public protocol ApodViewModelProtocol: AnyObject {
 class ApodViewModel: ApodViewModelProtocol {
 
     let isLoading = Bindable<Bool>(false)
+    var isLoadingDataError = Bindable<Bool>(false)
     var apodData = Bindable<ApodData?>(nil)
 
     var repo: CDApodDataRepository
@@ -36,29 +38,33 @@ class ApodViewModel: ApodViewModelProtocol {
         case true:
             getApodDataFromAPI()
         case false:
-            fetchDataFromDatabase()
+            guard let cdApodData = fetchTodayApodDataFromDB()
+            else {
+                self.isLoadingDataError.update(true)
+                return
+            }
+                
+            self.apodData.update(.init(title: cdApodData.title,
+                                        explanation: cdApodData.explanation,
+                                        url: "",
+                                        mediaType: cdApodData.mediaType,
+                                        date: cdApodData.date,
+                                        imagePath: cdApodData.imagePath))
         }
     }
 }
 
 // MARK: - Store Data Methods
 private extension ApodViewModel {
-    func fetchDataFromDatabase() {
-        guard let cdApodData = repo.getCDApodData(by: Date.today()) else { return }
-        self.apodData.update(.init(title: cdApodData.title,
-                                   explanation: cdApodData.explanation,
-                                   url: "",
-                                   mediaType: cdApodData.mediaType,
-                                   date: cdApodData.date,
-                                   imagePath: cdApodData.imagePath))
+    func fetchTodayApodDataFromDB() -> CDApodData? {
+        return repo.getCDApodData(by: Date.today())
     }
 
-    func saveData() {
-        guard let apodData = self.apodData.value else { return }
+    func saveApodDataToDB(apodData: ApodData) {
         _ = repo.save(with: apodData)
     }
 
-    func saveImage(with imageData: Data, and url: URL) {
+    func saveImageToDocumentFolder(with imageData: Data, and url: URL) {
         do {
             let saveImageUrl = try FileManager.saveImage(with: imageData,
                                                          in: Folder.ApodImages,
@@ -92,7 +98,7 @@ extension ApodViewModel {
                 case .success(let apodData):
                     self.isLoading.update(false)
                     self.apodData.update(apodData)
-                    self.saveData()
+                    self.saveApodDataToDB(apodData: apodData)
                 case .failure(let error):
                     print(error.localizedDescription)
                     self.isLoading.update(false)
@@ -114,7 +120,7 @@ extension ApodViewModel {
                     return
                 }
                 completion(data)
-                self.saveImage(with: data, and: imageURL)
+                self.saveImageToDocumentFolder(with: data, and: imageURL)
             }
         }
     }
